@@ -1,0 +1,58 @@
+Trame numero 1:
+Ethernet:
+	Adresse MAC Destination: 44:8a:5b:d0:cb:af
+	Adresse MAC Source: 7c:b7:33:ba:3c:37
+	Type (Ox0800): Internet Protocol version 4 (IPv4)IP:
+	Version: 4
+	Longueur de l'entete: 0x5 (20 octets)
+	Type of Service: 0x00 (0)
+	Longueur Totale: 0x007d (125 octets)
+	Identification: 0x2f60 (12128)
+	Fragmentation: 0b0100000000000000 (Reserve: 0 - Don't Fragment: 1 - More Fragments: 0 - Fragment Offset: 0)
+	Time To Live: 0x3c (60)
+	Protocole: 17 (UDP)
+	Checksum Entete: 0x11f556
+	Adresse Ip Source: 89.2.0.1
+	Adresse Ip Destination: 192.168.0.14
+UDP:
+	Port Source: 53
+	Port Destination 52715
+	Longueur: 0x0069 (105 octets)
+	Checksum: 0x61a7
+DNS:	Identification: 0x1119
+	Flags: val:0x8180
+	text:(Standard Query Response)
+	Questions: 1
+	Answer RRs: 3
+	Authority RRs: 0
+	Additional RRs: 0
+	Queries:
+		0:
+			Name : www.deezer.com
+			Type: 0x0001
+			Class: 0x0001
+	Answers:
+		0:
+			Name: www.deezer.com
+			Type: 0x0005
+			Class: 0x0001
+			Time to live: 0x000000e5
+			Data length: 0x000b
+			
+			Data: web.geo2.deezer.com
+		1:
+			Name: web.geo2.deezer.com
+			Type: 0x0005
+			Class: 0x0001
+			Time to live: 0x00000009
+			Data length: 0x000e
+			
+			Data: blm-vip-web.deezer.com
+		2:
+			Name: blm-vip-web.deezer.com
+			Type: 0x0001
+			Class: 0x0001
+			Time to live: 0x00000013
+			Data length: 0x0004
+			
+			Data: 185.60.92.37

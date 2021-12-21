@@ -1,0 +1,71 @@
+{
+    "Trame numero 1": {
+        "Ethernet": {
+            "Adresse MAC Destination": "ff:ff:ff:ff:ff:ff",
+            "Adresse Max Source": "00:0b:82:01:fc:42",
+            "Type": {
+                "hexa": "0x0800",
+                "Definition": "Internet Protocol version 4 (IPv4)"
+            }
+        },
+        "IP": {
+            "Version": "4",
+            "Longueur Entete": {
+                "hexa": "0x5",
+                "octet": "(20 octets)"
+            },
+            "TOS": {
+                "hexa": "0x00",
+                "octet": "(0)"
+            },
+            "Longueur Totale": {
+                "hexa": "0x012c",
+                "octet": "(300 octets)"
+            },
+            "Identification": {
+                "hexa": "0xa836",
+                "octet": "(43062)"
+            },
+            "Fragmentation": "Fragmentation: 0b0000000000000000 (Reserve: 0 - Don't Fragment: 0 - More Fragments: 0 - Fragment Offset: 0)",
+            "Time to live": {
+                "hexa": "0xfa",
+                "octet": "(250)"
+            },
+            "Protocole": {
+                "hexa": "17",
+                "valeur": "UDP"
+            },
+            "Checksum Entete": "0x11178b",
+            "Adresse Ip Source": "0.0.0.0",
+            "Adresse Ip Destination": "255.255.255.255"
+        },
+        "UDP": {
+            "Port Source": "68",
+            "Port Destination": "67",
+            "Longueur": {
+                "hexa": "0x0118",
+                "octet": "(280 octets)"
+            },
+            "Checksum": "0x591f"
+        },
+        "Dynamic Host Configuration Protocole (ret)": {
+            "Message type": "Boot Reply (1)",
+            "Hardware type": "Ethernet (0x01)",
+            "Hardware address length": "6",
+            "Hops": "0",
+            "Transaction ID": "0x00000000",
+            "Seconds elapsed": "61",
+            "Bootp flags": "0x1d00 (Unicast)",
+            "0... .... .... .... ": "Broadcast flag: Unicast",
+            ".001 1101 0000 0000": "Reserved flags: 0x1d00",
+            "Client IP address": "0.0.0.0",
+            "Your (client) IP address": "0.0.0.0",
+            "Next server IP address": "0.0.0.0",
+            "Relay agent IP address": "0.0.0.0",
+            "Client MAC address": "00:00:00:00:0b:82",
+            "Client hardware address padding": "01fc4200000000000000",
+            "Magic cookie": "DHCP",
+            "Padding": ""
+        }
+    }
+}

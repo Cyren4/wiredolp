@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/dolphin.svg.png">
+    <title>WireDolphin - Analyseur de Trace</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="text">
+          <a href="http://localhost:3000/">Home</a> 
+        </li> 
+        <li class="text" id="boutonAPropos"><a href='#apropos'>A Propos</a></li>
+        <li class="text" id="boutonPitchbook"><a href='https://www.canva.com/design/DAEyCv1s_aY/vYjU3GYW_iy2cu4_hzcGwA/view?utm_content=DAEyCv1s_aY&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'>PitchBook</a></li>
+        <li class="text" id="boutonContact"><a href='#contact'>Contact</a></li>
+      </ul>
+    </nav>
+            
+    <div class = "container"><img src="./images/reelBackground.png" alt="fondEcran">
+    <form class="form" id="formTrace" action= "index.html"><input type="file" id="fichierTrace" style="display: none;"></form>
+    
+    <button id="launch">Lancer l'analyse</button></div>
+      <div id="analyse" style="display: none;"><select
+        name="Trames"
+        id="listTrames"
+        size="10"
+        class="listTrames"
+      ></select>
+      <div class="details" id="details">
+        <details id="Couche2">
+          <summary></summary>
+          <p></p>
+        </details>
+        <details id="Couche3">
+          <summary></summary>
+          <p></p>
+        </details>
+        <details id="Couche4">
+          <summary></summary>
+          <p></p>
+        </details>
+        <details id="Couche7">
+          <summary></summary>
+          <p></p>
+        </details>
+      </div>
+      
+    </div>
+      <div class="entry-content" id="apropos" >
+        <h2 style="text-align:center;white-space:pre-wrap;color:white">WireDolphin en quelques minutes</h2>
+        <iframe  style="display: block;margin-left: auto;margin-right: auto"  width="560" height="315" src="https://www.youtube.com/embed/8TW2tnwzCtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+        <h2 style="text-align:left;white-space:pre-wrap;color:white">Un logiciel Open Source </h2>
+        <a href="https://github.com/Cyren4/projet_Wireshark">
+            <img style="display: block;margin-left: auto;margin-right: auto" width="290" height="150" src="../images/Github-Emblem.png" alt="github">
+        </a> 
+        <p style="text-align:left;white-space:pre-wrap;color:white">Outil privilegie pour tout développeur aguerri nous avons decide de collaborer sur un repository commun sur Github. GitHub est un site web et un service de cloud qui aide les developpeurs à stocker et à gérer leur code, ainsi qu’à suivre et controler les modifications qui lui sont apportées. L’objectif étant de profiter de ce projet pour apprendre les bonnes pratiques du travail en groupe. En rendant notre travail disponible sur Github il sera possible pour de futurs collaborateurs d'implémenter de nouvelles fonctionalité afin d'avoir un produit de meilleur qualité.</p>
+  
+  
+        <h2 style="text-align:left;white-space:pre-wrap;color:white" id="contact">Pour plus d'informations : </h2>
+        <p style="text-align:center;white-space:pre-wrap;color:white">Nous contacter  : <strong> <a href = "mailto: wiredolphin.supercoolSAAS@gmail.com">Send Email</a> or <a href="tel:3630">Call Us</a></strong></p> 
+      
+    
+    </div>
+    <script type="text/javascript" src="./mainpage.js"></script>
+
+  </body>
+</html>
